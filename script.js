@@ -23,12 +23,15 @@ const checkWinner = (plyValue) => {
         plycount++;
         ply.innerHTML = "Player: " + plycount;
         result.innerHTML = "You Won!!!";
+        result.style.backgroundColor="green";
     } else if (plyValue == compValue) {
         result.innerHTML = "Tie!!!";
+        result.style.backgroundColor="gray";
     } else {
         comcount++;
         comp.innerHTML = "Computer: " + comcount;
         result.innerHTML = "Computer Won!!!";
+        result.style.backgroundColor="red";
     }
 }
 
