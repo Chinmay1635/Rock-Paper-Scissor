@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissor</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="nav">
         <h1>Rock Paper Scissor</h1>
     </div>
     <div class="container">
         <div class="game">
-            <button class="opt" id="opt1" value="rock"></button>
-            <button class="opt" id="opt2" value="paper"></button>
-            <button class="opt" id="opt3" value="scissor"></button>
+            <button class="opt" id="opt1" value="1"></button>
+            <button class="opt" id="opt2" value="2"></button>
+            <button class="opt" id="opt3" value="3"></button>
         </div>
         <div class="counter">
             <div id="player">Player: 0</div>
@@ -23,9 +25,17 @@
         <div class="result">
             <span id="result">Select your move</span>
         </div>
+        <div class="rules">
+            <pre>
+                Rock wins against scissors.
+                Scissors win against paper.
+                Paper wins against rock.</pre>
+            
+        </div>
     </div>
 
 
     <script src="script.js"></script>
 </body>
+
 </html>
